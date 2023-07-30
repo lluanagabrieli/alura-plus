@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 :root {
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
+    --fonte-inter: 'Inter', sans-serif;
 }
 
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-family: var(--fonte-inter);
+    font-size: 1rem;
 }
 
 * {
@@ -23,4 +28,34 @@ body {
 
 .container {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50%;
+}
+
+.container__titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+/*.container__imagem {
+
+}*/
+
+.container__botao {
+    text-decoration: none;
+    color: var(--branco-principal);
+    background-color: var(--botao-azul);
+    border-radius: 6px;
+    padding: 1rem;
+    display: block;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 1px solid var(--branco-principal);
+}
+
+.container__texto {
+    font-size: 0.75rem;
+    color: var(--cinza-secundario);
 }
