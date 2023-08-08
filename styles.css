@@ -24,12 +24,19 @@ body {
     background-image: url("img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
 }
 
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 50%;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.container__caixa {
+    margin: 0 6rem;
+    text-align: center;
 }
 
 .container__titulo {
@@ -37,9 +44,9 @@ body {
     font-weight: 700;
 }
 
-/*.container__imagem {
-
-}*/
+.container__imagem {
+    margin: 1rem 0px 2rem 0px;
+}
 
 .container__botao {
     text-decoration: none;
@@ -48,6 +55,7 @@ body {
     border-radius: 6px;
     padding: 1rem;
     display: block;
+    margin-bottom: 1rem;
 }
 
 .botao_secundario {
@@ -57,5 +65,85 @@ body {
 
 .container__texto {
     font-size: 0.75rem;
+    color: var(--cinza-secundario);
+}
+
+.secundario {
+    margin: 0 10rem;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.descricao__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.terciario {
+    margin: 0 3rem;
+}
+
+.container__descricao {
+    padding: 2rem;
+}
+
+.secundario_botao {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 3rem;
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5rem 0;
+}
+
+.lista__item {
+    font-size: 2rem;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 7%;
+}
+
+.rodape__logo {
+    margin: 3% 0;
+}
+
+.rodape__lista {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 2%;
+}
+
+.lista__link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--branco-principal);
+}
+
+.rodape__texto {
+    margin-bottom: 2%;
+    font-size: 0.875rem;
     color: var(--cinza-secundario);
 }
